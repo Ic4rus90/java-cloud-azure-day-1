@@ -1,0 +1,79 @@
+/* Container styling */
+.notes-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header styling */
+  h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    color: #444;
+  }
+  
+  /* Notes list styling */
+  .notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .note-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .note-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Note title styling */
+  .note-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #007bff;
+  }
+  
+  /* Note content styling */
+  .note-content {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Note date styling */
+  .note-date {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  /* Add Note button styling */
+  .add-note-button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 30px auto 0;
+    padding: 12px 0;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .add-note-button:hover {
+    background-color: #218838;
+  }
+  

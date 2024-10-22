@@ -1,0 +1,8 @@
+<div class="user-details-container">
+  <h2>User Details</h2>
+  <div *ngIf="user" class="user-details">
+    <p><span class="detail-label">Username:</span> {{ user.username }}</p>
+    <p><span class="detail-label">Email:</span> {{ user.email }}</p>
+    <a [routerLink]="['/notes', user.id]" class="user-link">Notes</a>
+  </div>
+</div>

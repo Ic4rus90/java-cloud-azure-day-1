@@ -1,0 +1,39 @@
+/* Container styling */
+.user-details-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header styling */
+  .user-details-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #444;
+  }
+  
+  /* User details card */
+  .user-details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  /* Detail labels */
+  .detail-label {
+    font-weight: bold;
+    color: #555;
+    margin-right: 10px;
+  }
+  
+  /* Paragraph styling */
+  .user-details p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  

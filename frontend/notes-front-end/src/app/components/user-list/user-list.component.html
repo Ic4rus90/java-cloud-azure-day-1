@@ -1,0 +1,9 @@
+<div class="user-list-container">
+  <h2>User List</h2>
+  <ul class="user-list">
+    <li *ngFor="let user of users" class="user-item">
+      <a [routerLink]="['/users', user.id]" class="user-link">{{ user.username }}</a>
+    </li>
+  </ul>
+  <button routerLink="/add-user" class="add-user-button">Add User</button>
+</div>

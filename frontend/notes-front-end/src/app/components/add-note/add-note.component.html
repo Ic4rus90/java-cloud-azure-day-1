@@ -1,0 +1,27 @@
+<div class="add-note-container">
+  <h2>Add Note</h2>
+  <form (ngSubmit)="addNote()" class="add-note-form">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input
+        id="title"
+        [(ngModel)]="note.title"
+        name="title"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="content">Content:</label>
+      <textarea
+        id="content"
+        [(ngModel)]="note.content"
+        name="content"
+        class="form-control"
+        rows="6"
+        required
+      ></textarea>
+    </div>
+    <button type="submit" class="submit-button">Add Note</button>
+  </form>
+</div>

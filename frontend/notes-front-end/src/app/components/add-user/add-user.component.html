@@ -1,0 +1,27 @@
+<div class="add-user-container">
+  <h2>Add User</h2>
+  <form (ngSubmit)="addUser()" class="add-user-form">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input
+        id="username"
+        [(ngModel)]="user.username"
+        name="username"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        id="email"
+        [(ngModel)]="user.email"
+        name="email"
+        type="email"
+        class="form-control"
+        required
+      />
+    </div>
+    <button type="submit" class="submit-button">Add User</button>
+  </form>
+</div>

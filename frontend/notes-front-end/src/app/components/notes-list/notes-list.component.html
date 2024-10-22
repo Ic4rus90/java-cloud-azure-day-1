@@ -1,0 +1,11 @@
+<div class="notes-list-container">
+  <h3>Notes</h3>
+  <ul class="notes-list">
+    <li *ngFor="let note of notes" class="note-item">
+      <h4 class="note-title">{{ note.title }}</h4>
+      <p class="note-content">{{ note.content }}</p>
+      <p class="note-date">Created At: {{ note.createdAt | date:'medium' }}</p>
+    </li>
+  </ul>
+  <button [routerLink]="['/add-note', userId]" class="add-note-button">Add Note</button>
+</div>
