@@ -6,13 +6,13 @@ import com.booleanuk.simpleapi.models.User;
 import com.booleanuk.simpleapi.repositories.NotesRepository;
 import com.booleanuk.simpleapi.repositories.UserRepository;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping("notes")
 public class NotesController {

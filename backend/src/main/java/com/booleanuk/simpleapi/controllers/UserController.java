@@ -10,6 +10,7 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.ArrayList;
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping("users")
 public class UserController {
@@ -23,7 +24,6 @@ public class UserController {
     @GetMapping()
     public ResponseEntity<List<User>> getAllUsers() {
         List<User> userList = this.userRepository.findAll();
-
         return ResponseEntity.ok(userList);
     }
 

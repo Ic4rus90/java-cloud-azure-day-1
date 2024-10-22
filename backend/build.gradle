@@ -2,6 +2,9 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.3.4'
 	id 'io.spring.dependency-management' version '1.1.6'
+
+	//add to make azure work
+	id "com.microsoft.azure.azurewebapp" version "1.10.0"
 }
 
 group = 'com.booleanuk'
@@ -36,4 +39,22 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+
+azurewebapp {
+	subscription = 'e402df73-1b09-4bfc-94f6-214ae8c48784'
+	resourceGroup = 'students_infrastructure'
+	appName = 'Thomas-Wiik-Notes'
+	appServicePlanName = 'ASP-studentsinfrastructure-a6a0'
+	pricingTier = 'F1'
+	region = 'northeurope'
+	runtime {
+		os = 'Linux'
+		webContainer = 'Java SE' // or 'Java SE' if you want to run an executable jar
+		javaVersion = 'Java 21'
+	}
+	auth {
+		type = 'azure_cli' // support azure_cli, oauth2, device_code and service_principal
+	}
 }
